@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling with US</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="sub-header">
+        <nav>
+          <a href="index.html"><img src="imges/logo.png" alt="logo" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="plan_your_trip.html">Plan Your Trip</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contect.html">Contact US</a></li>
+            </ul>
+          </div>
+          <i onclick="showmenu()" class="fa-solid fa-bars"></i>
+        </nav>
+        <h1>About Us</h1>
+    </div>
+    </section>
+
+   <!-- ----- about us content ------ -->
+
+   <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We provide Best Traveling Experience.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae amet. Ducimus qui cumque, accusantium sint debitis fuga! Exercitationem consequuntur necessitatibus animi consequatur sunt odit libero nihil veniam omnis, unde similique, esse at reprehenderit. Id delectus alias a provident distinctio quisquam nobis fuga suscipit culpa?</p>
+        <a href="" class="btn about-btn">EXPLORE NOW</a>
+      </div>
+      <div class="about-col">
+        <img src="imges/about.webp" alt="">
+      </div>
+    </div>
+   </section>
+
+    <!------- footer ------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        unde et minima fugiat repellat est beatae <br />distinctio laboriosam.
+        Error cum tempore dolorum dicta?
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa fa-facebook-f"></i>
+        <i class="fa-brands fa fa-instagram"></i>
+        <i class="fa-brands fa fa-twitter"></i>
+        <i class="fa-brands fa fa-linkedin-in"></i>
+      </div>
+      <p>Made with <i class="fa-regular fa fa-heart"></i> by Easy Tutorials</p>
+    </section>
+
+    <!--------JS for Toggle menu-------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
